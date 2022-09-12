@@ -21,7 +21,10 @@ class CreatePostsTable extends Migration
             $table->string('name');
             $table->boolean('free')->default(0);
 
-            $table->foreign('course_id')->references('id')->on('courses');
+            $table
+                ->foreign('course_id')
+                ->references('id')
+                ->on('courses');
 
             $table->timestamps();
         });
