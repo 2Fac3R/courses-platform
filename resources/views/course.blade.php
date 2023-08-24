@@ -4,14 +4,14 @@
     <div class="grid grid-cols-3 gap-4">
         <div class="col-span-1 p-8 bg-gray-200">
             <ul class="flex flex-col">
-                <li class="mb-4 text-sm font-medium text-gray-400 uppercase">Contenido</li>
+                <li class="mb-4 text-sm font-medium text-gray-400 uppercase">Content</li>
 
                 @foreach ($course->posts as $post)
                     <li class="flex items-center mt-2 text-gray-600">
                         {{ $post->name }}
                         @if ($post->free)
                             <span class="px-2 ml-auto text-xs font-semibold text-gray-500 bg-gray-200 rounded-full">
-                                Gratis
+                                Free
                             </span>
                         @endif
                     </li>
@@ -38,8 +38,8 @@
     </div>
 
     <div class="mt-12 text-center">
-        <h1 class="mb-2 text-3xl text-gray-700 uppercase">Últimos Cursos</h1>
-        <h2 class="text-xl text-gray-600">Fórmate online como profesional en tecnología</h2>
+        <h1 class="mb-2 text-3xl text-gray-700 uppercase">Last Courses</h1>
+        <h2 class="text-xl text-gray-600">Develop into a technology professional through online training.</h2>
     </div>
 
     <livewire:course-list>
